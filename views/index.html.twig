@@ -1,0 +1,9 @@
+{% extends "layout.html.twig" %}
+{% block title %}Home{% endblock %} 
+{% block content %} 
+{% for movies in movies %}
+<movie>
+    <h2>{{ movie.title }}</a></h2>
+    <p>{{ movie.descriptionShort }}</p>
+</movie>
+{% endfor %} {% endblock %}
